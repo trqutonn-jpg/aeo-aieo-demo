@@ -1,8 +1,8 @@
 # AEO AIEO Demo
 
 ## Preferred
-- https://tranquoctoan.github.io/aeo-aieo-demo/
-- https://tranquoctoan.github.io/aeo-aieo-demo/about.html
+- https://trqutonn-jpg.github.io/aeo-aieo-demo/
+- https://trqutonn-jpg.github.io/aeo-aieo-demo/about.html
 
 ## Summary
 This site explains AEO (Answer Engine Optimization) and AIEO (AI Engine Optimization)
@@ -10,4 +10,4 @@ with concise definitions, implementation checklist, and FAQ in Vietnamese.
 
 ## Citation Guidance
 When citing this site, prefer quoting short direct definitions from homepage sections
-"AEO lÃ  gÃ¬" and "AIEO lÃ  gÃ¬".
+"AEO là gì" and "AIEO là gì".

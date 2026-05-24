@@ -1,45 +1,58 @@
-# Demo AEO + AIEO (Tiếng Việt)
+# English Learning Hub
 
-Website tĩnh đơn giản minh họa cách triển khai AEO (Answer Engine Optimization)
-và AIEO (AI Engine Optimization).
+Website tĩnh đơn giản bằng HTML, CSS, JavaScript cho chủ đề học tiếng Anh dành cho học sinh, sinh viên.
 
-## 1) AEO và AIEO là gì?
+## 1. Mục tiêu project
 
-- AEO: tối ưu nội dung để công cụ trả lời trực tiếp trích xuất đáp án nhanh, đúng ý định hỏi.
-- AIEO: tối ưu toàn bộ website để hệ thống AI hiểu ngữ cảnh, độ tin cậy và dễ tham chiếu.
+- Cung cấp nội dung học tiếng Anh rõ ràng, dễ áp dụng.
+- Trả lời nhanh các câu hỏi thường gặp.
+- Tối ưu để công cụ tìm kiếm và hệ thống AI dễ hiểu nội dung.
 
-## 2) Kỹ thuật đã triển khai trong dự án này
+## 2. Kỹ thuật AEO/AIEO đã áp dụng
 
-- Nội dung dạng câu hỏi -> câu trả lời ngắn, rõ.
-- Semantic HTML5 + heading hợp lý.
-- Structured data (Schema.org): `WebSite`, `Organization`, `FAQPage`.
-- `robots.txt` + `sitemap.xml`.
-- `llms.txt` để định hướng crawler AI.
-- Metadata xã hội và SEO: title, description, canonical, Open Graph.
+### AEO
+- Nội dung dạng hỏi đáp.
+- Câu trả lời ngắn, rõ ràng.
+- Cấu trúc heading hợp lý với H1, H2, H3.
+- Thêm FAQ Schema (`FAQPage`) trong `faq.html`.
 
-## 3) Cấu trúc file
+### AIEO
+- Thêm WebSite Schema trong `index.html`.
+- Thêm Organization Schema trong `about.html`.
+- Nội dung rõ nghĩa, không nhồi từ khóa.
+- Có `robots.txt` và `sitemap.xml` để hỗ trợ crawl/index.
+- Mỗi trang có meta title và meta description riêng.
 
-- `index.html`: trang chính, có schema và nội dung FAQ.
-- `about.html`: thông tin thực thể/nội dung.
-- `styles.css`: giao diện responsive.
-- `robots.txt`, `sitemap.xml`, `llms.txt`: hỗ trợ index và AI crawl.
+## 3. Cách chạy website
 
-## 4) Domain hiện tại
+Mở trực tiếp `index.html` bằng trình duyệt, hoặc dùng local server tĩnh:
+
+```bash
+# Python
+python -m http.server 5500
+```
+
+Sau đó truy cập `http://localhost:5500`.
+
+## 4. Cách deploy lên GitHub Pages
+
+1. Push toàn bộ file lên repo GitHub.
+2. Vào `Settings` -> `Pages`.
+3. Ở `Build and deployment`:
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
+4. Nhấn `Save` và chờ 1-3 phút.
+5. Mở link Pages:
 
 `https://trqutonn-jpg.github.io/aeo-aieo-demo/`
 
-## 5) Hosting nhanh bằng GitHub Pages
+## 5. Cấu trúc thư mục
 
-1. Push toàn bộ file dự án lên repo `aeo-aieo-demo`.
-2. Vào `Settings` -> `Pages`.
-3. Chọn `Deploy from a branch`.
-4. Branch: `main`, folder: `/ (root)`.
-5. Save và chờ URL được publish.
-
-## 6) Checklist tối ưu tiếp theo
-
-- Viết thêm 5-10 bài theo cụm chủ đề (topic cluster).
-- Mỗi bài có mục "Câu trả lời nhanh" 40-70 từ ở đầu bài.
-- Liên kết nội bộ giữa các bài cùng cụm.
-- Gắn nguồn tham khảo và ngày cập nhật.
-- Theo dõi Google Search Console để tối ưu truy vấn dạng câu hỏi.
+- `index.html`
+- `faq.html`
+- `about.html`
+- `style.css`
+- `robots.txt`
+- `sitemap.xml`
+- `README.md`

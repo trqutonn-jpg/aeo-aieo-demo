@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ học tiếng Anh | English Learning Hub</title>
-  <meta name="description" content="Các câu hỏi thường gặp về học tiếng Anh cho học sinh, sinh viên với câu trả lời ngắn, rõ ràng." />
+  <title>FAQ AEO/AIEO | English Learning Hub</title>
+  <meta name="description" content="Câu hỏi thường gặp về cách triển khai AEO và AIEO cho website học tiếng Anh." />
   <link rel="canonical" href="https://trqutonn-jpg.github.io/aeo-aieo-demo/faq.html" />
   <link rel="stylesheet" href="./style.css" />
   <script type="application/ld+json">
@@ -14,26 +14,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Mất bao lâu để giao tiếp tiếng Anh cơ bản?",
+        "name": "AEO là gì trong website học tiếng Anh?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nếu học đều mỗi ngày, đa số học sinh có thể giao tiếp cơ bản sau 3 đến 6 tháng."
+          "text": "AEO là cách viết nội dung để công cụ trả lời trực tiếp có thể lấy câu trả lời ngắn và chính xác."
         }
       },
       {
         "@type": "Question",
-        "name": "Nên học từ vựng hay ngữ pháp trước?",
+        "name": "AIEO khác AEO ở điểm nào?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nên học song song, nhưng ưu tiên từ vựng thông dụng để dùng được ngay trong câu."
+          "text": "AIEO tập trung giúp hệ thống AI hiểu toàn bộ ngữ cảnh và độ tin cậy của website, không chỉ một câu trả lời đơn lẻ."
         }
       },
       {
         "@type": "Question",
-        "name": "Mỗi ngày nên học bao nhiêu phút?",
+        "name": "Website nhỏ có cần schema không?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bạn nên học 20 đến 45 phút mỗi ngày và duy trì đều để tạo tiến bộ ổn định."
+          "text": "Có. Schema giúp bot hiểu đúng loại nội dung và mối quan hệ thông tin ngay cả khi website còn ít trang."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bao lâu nên cập nhật sitemap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mỗi khi thêm trang mới hoặc thay đổi URL quan trọng, bạn nên cập nhật sitemap ngay."
         }
       }
     ]
@@ -54,29 +62,72 @@
 
   <main class="container">
     <section class="hero">
-      <h1>Câu hỏi thường gặp về học tiếng Anh</h1>
-      <p>Trả lời nhanh, rõ ràng để bạn áp dụng ngay.</p>
+      <h1>FAQ triển khai AEO và AIEO</h1>
+      <p>Phần hỏi đáp thực hành để bạn tối ưu website nhanh và đúng trọng tâm.</p>
     </section>
 
     <section>
-      <h2>Nhóm câu hỏi phổ biến</h2>
-      <article class="card">
-        <h3>Mất bao lâu để giao tiếp tiếng Anh cơ bản?</h3>
-        <p>Nếu học đều mỗi ngày, đa số học sinh có thể giao tiếp cơ bản sau 3 đến 6 tháng.</p>
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq-tools card">
+        <label for="faq-search">Tìm theo từ khóa</label>
+        <input id="faq-search" type="text" placeholder="Ví dụ: schema, sitemap, heading..." />
+        <button id="toggle-all" class="btn" type="button">Hiện tất cả</button>
+      </div>
+
+      <article class="card faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">AEO là gì trong website học tiếng Anh?</button></h3>
+        <p class="faq-a">AEO là cách viết nội dung để công cụ trả lời trực tiếp có thể lấy câu trả lời ngắn và chính xác.</p>
       </article>
-      <article class="card">
-        <h3>Nên học từ vựng hay ngữ pháp trước?</h3>
-        <p>Nên học song song, nhưng ưu tiên từ vựng thông dụng để dùng được ngay trong câu.</p>
+      <article class="card faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">AIEO khác AEO ở điểm nào?</button></h3>
+        <p class="faq-a">AIEO tập trung giúp hệ thống AI hiểu toàn bộ ngữ cảnh và độ tin cậy của website, không chỉ một câu trả lời đơn lẻ.</p>
       </article>
-      <article class="card">
-        <h3>Mỗi ngày nên học bao nhiêu phút?</h3>
-        <p>Bạn nên học 20 đến 45 phút mỗi ngày và duy trì đều để tạo tiến bộ ổn định.</p>
+      <article class="card faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">Website nhỏ có cần schema không?</button></h3>
+        <p class="faq-a">Có. Schema giúp bot hiểu đúng loại nội dung và mối quan hệ thông tin ngay cả khi website còn ít trang.</p>
       </article>
-      <article class="card">
-        <h3>Làm sao đỡ ngại khi nói tiếng Anh?</h3>
-        <p>Bắt đầu bằng câu ngắn, luyện nói một mình trước, rồi tăng dần khi nói với bạn học.</p>
+      <article class="card faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false">Bao lâu nên cập nhật sitemap?</button></h3>
+        <p class="faq-a">Mỗi khi thêm trang mới hoặc thay đổi URL quan trọng, bạn nên cập nhật sitemap ngay.</p>
       </article>
     </section>
   </main>
+
+  <script>
+    const items = [...document.querySelectorAll(".faq-item")];
+    const questions = [...document.querySelectorAll(".faq-q")];
+    const search = document.getElementById("faq-search");
+    const toggleAllBtn = document.getElementById("toggle-all");
+    let expandedAll = false;
+
+    function setOpen(item, open) {
+      const q = item.querySelector(".faq-q");
+      const a = item.querySelector(".faq-a");
+      q.setAttribute("aria-expanded", open ? "true" : "false");
+      a.style.display = open ? "block" : "none";
+    }
+
+    items.forEach((item) => setOpen(item, false));
+    questions.forEach((q) => q.addEventListener("click", () => {
+      const item = q.closest(".faq-item");
+      const isOpen = q.getAttribute("aria-expanded") === "true";
+      setOpen(item, !isOpen);
+    }));
+
+    search.addEventListener("input", () => {
+      const key = search.value.trim().toLowerCase();
+      items.forEach((item) => {
+        item.style.display = item.textContent.toLowerCase().includes(key) ? "block" : "none";
+      });
+    });
+
+    toggleAllBtn.addEventListener("click", () => {
+      expandedAll = !expandedAll;
+      items.forEach((item) => {
+        if (item.style.display !== "none") setOpen(item, expandedAll);
+      });
+      toggleAllBtn.textContent = expandedAll ? "Thu gọn" : "Hiện tất cả";
+    });
+  </script>
 </body>
 </html>

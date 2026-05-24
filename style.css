@@ -97,6 +97,36 @@ p {
   filter: brightness(0.95);
 }
 
+.faq-tools label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.faq-tools input {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+
+.faq-q {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  padding: 0;
+  cursor: pointer;
+}
+
+.faq-a {
+  margin-top: 0.8rem;
+}
+
 .site-footer {
   margin: 1.5rem 0;
   text-align: center;

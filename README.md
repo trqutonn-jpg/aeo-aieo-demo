@@ -1,53 +1,52 @@
-# English Learning Hub
+# English Learning Hub - AEO/AIEO Focus
 
-Website tĩnh đơn giản bằng HTML, CSS, JavaScript cho chủ đề học tiếng Anh dành cho học sinh, sinh viên.
+Website tĩnh cho chủ đề học tiếng Anh, tối ưu chủ yếu theo kỹ thuật triển khai AEO và AIEO.
 
-## 1. Mục tiêu project
+## Mục tiêu project
 
-- Cung cấp nội dung học tiếng Anh rõ ràng, dễ áp dụng.
-- Trả lời nhanh các câu hỏi thường gặp.
-- Tối ưu để công cụ tìm kiếm và hệ thống AI dễ hiểu nội dung.
+- Tạo nội dung trả lời nhanh cho người học (AEO).
+- Tạo cấu trúc dữ liệu rõ ràng để hệ thống AI hiểu đúng ngữ cảnh (AIEO).
+- Dùng website như một template thực hành để tái sử dụng cho dự án khác.
 
-## 2. Kỹ thuật AEO/AIEO đã áp dụng
+## Kỹ thuật AEO đã áp dụng
 
-### AEO
-- Nội dung dạng hỏi đáp.
-- Câu trả lời ngắn, rõ ràng.
-- Cấu trúc heading hợp lý với H1, H2, H3.
-- Thêm FAQ Schema (`FAQPage`) trong `faq.html`.
+- Nội dung hỏi đáp, câu trả lời ngắn 1-3 câu.
+- Cấu trúc heading chuẩn H1 -> H2 -> H3.
+- FAQ có thể mở/đóng và tìm kiếm để người dùng truy cập nhanh câu trả lời.
+- FAQ Schema (`FAQPage`) trong `faq.html`.
 
-### AIEO
-- Thêm WebSite Schema trong `index.html`.
-- Thêm Organization Schema trong `about.html`.
-- Nội dung rõ nghĩa, không nhồi từ khóa.
-- Có `robots.txt` và `sitemap.xml` để hỗ trợ crawl/index.
-- Mỗi trang có meta title và meta description riêng.
+## Kỹ thuật AIEO đã áp dụng
 
-## 3. Cách chạy website
+- WebSite Schema trong `index.html`.
+- Organization Schema trong `about.html`.
+- Meta title + meta description riêng cho từng trang.
+- `robots.txt` và `sitemap.xml` để hỗ trợ crawl/index.
+- Liên kết nội bộ rõ ràng giữa 3 trang.
 
-Mở trực tiếp `index.html` bằng trình duyệt, hoặc dùng local server tĩnh:
+## Cách chạy website
+
+Mở trực tiếp `index.html` hoặc chạy local server:
 
 ```bash
-# Python
 python -m http.server 5500
 ```
 
-Sau đó truy cập `http://localhost:5500`.
+Mở: `http://localhost:5500`
 
-## 4. Cách deploy lên GitHub Pages
+## Deploy GitHub Pages
 
-1. Push toàn bộ file lên repo GitHub.
+1. Upload tất cả file lên repo GitHub.
 2. Vào `Settings` -> `Pages`.
-3. Ở `Build and deployment`:
+3. Chọn:
 - Source: `Deploy from a branch`
 - Branch: `main`
 - Folder: `/ (root)`
-4. Nhấn `Save` và chờ 1-3 phút.
-5. Mở link Pages:
+4. Save và chờ 1-3 phút.
+5. Truy cập:
 
 `https://trqutonn-jpg.github.io/aeo-aieo-demo/`
 
-## 5. Cấu trúc thư mục
+## Cấu trúc thư mục
 
 - `index.html`
 - `faq.html`
